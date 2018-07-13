@@ -1,4 +1,5 @@
 #!/bin/sh
+# Created by David Raditya Karissaputra | email: davidraditya.netic@yahoo.com
 cd
 
 echo Update all apps...
@@ -30,9 +31,8 @@ echo 'GOVERNOR="performance"' > /etc/default/cpufrequtils
 update-rc.d ondemand disable
 
 echo Remove unused kernel...
-dpkg --get-selections | grep linux-
+dpkg --get-selections | grep linux-image
 apt-get purge linux-image-3.13.0-143-generic linux-image-extra-3.13.0-143-generic linux-image-generic
-#y
 
 echo Update Boot Loader
 update-grub2
