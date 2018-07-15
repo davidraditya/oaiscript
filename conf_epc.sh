@@ -15,8 +15,7 @@ sed -i -e 's/TAC = "10";/TAC = "5";/g' epc.conf.in
 sed -i -e 's/= "127.0.0.1:5656";/= "CONSOLE";/g' epc.conf.in
 
 #Ask for previously recorded eth0 IP $newipadd
-echo "Enter previously recorded eth0 IP: "
-read $newipadd
+read -p "Enter previously recorded eth0 IP: " newipadd
 
 #change PGW_IPV4_ADDRESS_FOR_SGI with new IP address
 sed -i -e 's/192.168.12.17/$newipadd/g' epc.conf.in
