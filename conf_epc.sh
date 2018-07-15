@@ -2,7 +2,7 @@
 # Created by David Raditya Karissaputra | email: davidraditya.netic@yahoo.com
 
 echo Configure EPC...
-cd openair-cn/BUILD/EPC/
+cd ~/openair-cn/BUILD/EPC/
 sed -i -e 's/= "@REALM@";/= "openair4G.eur";/g' epc.conf.in
 sed -i -e 's/MNC="95";/MNC="93";/g' epc.conf.in
 sed -i -e 's/TAC = "15";/TAC = "1";/g' epc.conf.in
