@@ -1,10 +1,5 @@
 #!/bin/sh
 # Created by David Raditya Karissaputra | email: davidraditya.netic@yahoo.com
-echo Begin EPC installation...
-cd openair-cn/SCRIPTS/
-sudo ./build_hss -i
-sudo ./build_epc -i
-
 echo Begin eNB installation...
 cd ~/openairinterface5g/cmake_targets/
 sudo ./build_oai -I --eNB -x --install-system-files -w USRP
