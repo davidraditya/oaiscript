@@ -17,4 +17,4 @@ sed -i -e 's/= "127.0.0.3";/= "192.170.0.1";/g' enb.band7.tm1.50PRB.usrpb210.con
 sed -i -e 's/S1_MME            = "lo";/S1_MME            = "eth0:3";/g' enb.band7.tm1.50PRB.usrpb210.conf
 sed -i -e 's/= "127.0.0.2/= "192.170.0.2/g' enb.band7.tm1.50PRB.usrpb210.conf
 sed -i -e 's/S1U               = "lo";/S1U               = "eth0:4";/g' enb.band7.tm1.50PRB.usrpb210.conf
-sed -i -e 's/= "127.0.0.5/= "192.170.0.2/g' enb.band7.tm1.50PRB.usrpb210.conf
+sed -i -e 's/= "127.0.0.5/= "192.170.1.2/g' enb.band7.tm1.50PRB.usrpb210.conf
